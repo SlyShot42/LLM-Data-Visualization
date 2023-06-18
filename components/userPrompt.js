@@ -7,8 +7,7 @@ const UserPrompt = () => {
     return (
         <div className='w-full h-fit'>
             <h4>Username:</h4>
-            <textarea className='w-full resize-none mt-0 p-2 rounded-xl' minRows='1' placeholder='Enter Prompt'>
-            </textarea>
+            <TextareaAutosize className='w-full resize-none mt-0 p-2 rounded-xl' minRows='1' placeholder='Enter Prompt'/>
         </div>
     );
 };
