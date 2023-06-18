@@ -3,7 +3,8 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import React from 'react';
 import '../styles/tailwind.css';
-import UserPrompt from '../components/userPrompt'
+import UserPrompt from '@/components/userPrompt'
+import GptResponse from '@/components/gptResponse';
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
         </div> 
         <div className='basis-1/2 border border-black w-full max-h-full h-full p-5 bg-white text-black z-50 rounded-xl'>
           <UserPrompt></UserPrompt>
+          <GptResponse></GptResponse>
         </div>       
       </div>
     </main>
